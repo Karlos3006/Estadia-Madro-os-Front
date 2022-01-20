@@ -1,295 +1,384 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Madroños</title>
-    <meta name="description" content="">
-    <meta name="TechnoGenesis" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+<html class="no-js" lang="es">
+  <head>
+    <title>Madroños-MX</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/carlos.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- CSSMenu -->
-    <link rel="stylesheet" href="css/styleMen.css">
+    <link rel="stylesheet" href="css/styleMen.css" />
     <!--CSS Cards de informacion-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--CSS Buscador-->
     <link href="css/mainB.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/micss.css">
+    <!-- <link rel="stylesheet" href="css/micss.css" /> -->
 
-    <!-- script
-    ================================================== -->
+    <!-- script -->
     <script src="js/modernizr.js"></script>
-    
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/logo2.ico" type="image/x-icon">
-    <link rel="icon" href="img/logo2.ico" type="image/x-icon">
+    <!-- favicons-->
+    <link rel="shortcut icon" href="img/logo2.ico" type="image/x-icon" />
+    <link rel="icon" href="img/logo2.ico" type="image/x-icon" />
+  </head>
 
-</head>
-
-<body id="top">
-
-    <!-- header
-    ================================================== -->
+  <body id="top">
+    <!-- HEADER -->
     <header class="s-header">
-        <!--MENU-->
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-            <div class="container">
+      <!--MENU-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+        id="ftco-navbar"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-expanded="false"
+        >
+          <span class="rounded-circle"
+            ><img src="img/logo.ico" class="navicono" alt=""
+          /></span>
+        </button>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="./buscador.html" class="nav-link">Búsqueda Guiada</a>
+              </li>
+              <li class="nav-item">
+                <a href="#esp" class="nav-link">Especies</a>
+              </li>
+              <li class="nav-item">
+                <a href="./glosario.html" class="nav-link">Glosario</a>
+              </li>
+              <li class="nav-item">
+                <a href="./nosotros.html" class="nav-link">Conocenos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#cont" class="nav-link">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="http://localhost:3000/usuario/login" class="nav-link"
+                  ><b>Acceder</b></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end s-header -->
 
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="#" class="nav-link">INICIO</a></li>
-                        <li class="nav-item"><a href="./buscador.html" class="nav-link">BUSCAR MADROÑO</a></li>
-                        <li class="nav-item"><a href="#esp" class="nav-link">ESPECIES</a></li>
-                        <li class="nav-item"><a href="./glosario.html" class="nav-link">GLOSARIO</a></li>
-                        <li class="nav-item"><a href="./nosotros.html" class="nav-link">CONOCENOS</a></li>
-                        <li class="nav-item"><a href="#cont" class="nav-link">CONTACTO</a></li>
-                        <li class="nav-item"><a href="http://localhost:3000/usuario/login" class="nav-link">ACCEDER</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->  
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="img/DSCN1287.jpg"
-        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
-        <div class="home-content">
-            <div class="row home-content__main">
-                <h1>
-                    MADROÑOS.<br>
-                </h1>
-                <h3>Arboles o Arbustos de hojas<br>
-                    alternas, lanceoladas y <br>
-                    persistentes cuyo fruto es comestible.
-                </h3>
-            </div>
-        </div> <!-- end home-content -->
-    </section> <!-- end s-home -->
-
+    <!-- HOME -->
+    <section
+      id="home"
+      class="s-home target-section"
+      data-parallax="scroll"
+      data-image-src="img/DSCN1287.jpg"
+      data-natural-width="3000"
+      data-natural-height="2000"
+      data-position-y="center"
+    >
+      <div class="overlay"></div>
+      <div class="shadow-overlay"></div>
+      <div class="home-content">
+        <div class="row home-content__main">
+          <h1>MADROÑOS<br /></h1>
+          <h3>
+            Árboles o arbustos de hojas<br />
+            alternas, lanceoladas y <br />
+            persistentes cuyo fruto es comestible.
+          </h3>
+        </div>
+      </div>
+      <!-- end home-content -->
+    </section>
+    <!-- end s-home -->
 
     <section id="esp" class="s-clients">
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h1 class="display-3 subheadBG">-Listado de Especies-</h1>
-            </div>
-        </div> <!-- end section-header -->
-        <!--Seccion de mas info-->
-        <div class="wrap">
-            <div class="tarjeta-wrap" data-aos="fade-right">
-                <div class="tarjeta">
-                    <div class="adelante card1"></div>
-                    <div class="atras">
-                        <a href="arbutus.html"><h2 class="display-4 text-white">Arbutus.</h2></a>
-                    </div>
-                </div>
-            </div>
-            <div class="tarjeta-wrap" data-aos="fade-up">
-                <div class="tarjeta">
-                    <div class="adelante card2"></div>
-                    <div class="atras">
-                        <a href="comarostaphylis.html"><h2 class="display-4 text-white">Comarostaphylis.</h2></a>
-                    </div>
-                </div>
-            </div>
-            <div class="tarjeta-wrap" data-aos="fade-left">
-                <div class="tarjeta">
-                    <div class="adelante card3"></div>
-                    <div class="atras">
-                        <a href="glosario.html"><h1 class="display-4 text-white">Glosario.</h1></a>
-                    </div>
-                </div>
-            </div>
+      <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h1 class="display-3 subheadBG">-Géneros de Madroños-</h1>
         </div>
+      </div>
 
-        <!--Cierre de la seccion de mas info-->
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <span><a href="buscador.html">Da click para comenzar con el buscador.</a></span>
-            </div>
-        </div>
-        <!--Mapa-->
-        <div class="container-fluid map-cont">
-            <div class="w-70">
-                
-            </div>    
-        </div>
-        <!--Cierre del mapa-->
-    </section> <!-- end s-clients -->
+      <!-- Inicio Cards -->
 
+      <div class="section">
+        <div class="conte" data-aos="fade-right">
+          <div class="cart">
+            <div class="front cart1">
+              <div class="content"></div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <a href="arbutus.html">
+                  <h3>Arbutus</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="conte" data-aos="fade-up">
+          <div class="cart">
+            <div class="front cart2">
+              <div class="content"></div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <a href="comarostaphylis.html">
+                  <h3>Comarostaphylis</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="conte" data-aos="fade-left">
+          <div class="cart">
+            <div class="front cart3">
+              <div class="content"></div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <a href="glosario.html">
+                  <h3>Glosario</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Cards -->
+
+      <!-- Inicio Boton Buscar -->
+      <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-fully">
+          <a href="buscador.html">
+            <div id="buscar">
+              <img src="img/lupa.svg" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Fin Boton Buscar -->
+    </section>
 
     <!-- contact
     ================================================== -->
     <section id="cont" class="s-contact">
+      <div class="overlay"></div>
+      <div class="contact__line"></div>
 
-        <div class="overlay"></div>
-        <div class="contact__line"></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contáctenos.</h3>
-                <h1 class="display-2 display-2--light">¿Dudas o mas información?</h1>
-            </div>
+      <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Contáctenos.</h3>
+          <h1 class="display-2 display-2--light">¿Dudas o mas información?</h1>
         </div>
+      </div>
 
-        <div class="row contact-content" data-aos="fade-up">
+      <div class="row contact-content" data-aos="fade-up">
+        <div class="contact-primary">
+          <h3 class="h6">Envíanos un Mensaje.</h3>
 
-            <div class="contact-primary">
+          <form
+            name="contactForm"
+            id="contactForm"
+            method="post"
+            action=""
+            novalidate="novalidate"
+          >
+            <fieldset>
+              <div class="form-field">
+                <input
+                  name="contactName"
+                  type="text"
+                  id="contactName"
+                  placeholder="Tu nombre"
+                  value=""
+                  minlength="2"
+                  required=""
+                  aria-required="true"
+                  class="full-width"
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactEmail"
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Tu Email"
+                  value=""
+                  required=""
+                  aria-required="true"
+                  class="full-width"
+                />
+              </div>
 
-                <h3 class="h6">Envianos un Mensaje.</h3>
-
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                    <fieldset>
-
-                        <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Tu nombre" value=""
-                                minlength="2" required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Tu Email" value=""
-                                required="" aria-required="true" class="full-width">
-                        </div>
- 
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="Mensage" rows="10"
-                                cols="50" required="" aria-required="true" class="full-width"></textarea>
-                        </div>
-                        <div class="form-field">
-                            <button class="full-width btn--primary">Enviar</button>
-                            <div class="submit-loader">
-                                <div class="text-loader">Enviando...</div>
-                                <div class="s-loader">
-                                    <div class="bounce1"></div>
-                                    <div class="bounce2"></div>
-                                    <div class="bounce3"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </form>
-
-                <!-- contact-warning -->
-                <div class="message-warning">
-                    Algo salio mal, intenta de nuevo.
+              <div class="form-field">
+                <textarea
+                  name="contactMessage"
+                  id="contactMessage"
+                  placeholder="Mensaje"
+                  rows="10"
+                  cols="50"
+                  required=""
+                  aria-required="true"
+                  class="full-width"
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <button class="full-width btn--primary">Enviar</button>
+                <div class="submit-loader">
+                  <div class="text-loader">Enviando...</div>
+                  <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
                 </div>
+              </div>
+            </fieldset>
+          </form>
 
-                <!-- contact-success -->
-                <div class="message-success">
-                    Tu mensaje ha ido enviado, Gracias!<br>
-                </div>
+          <!-- contact-warning -->
+          <div class="message-warning">Algo salio mal, intenta de nuevo.</div>
 
-            </div> <!-- end contact-primary -->
+          <!-- contact-success -->
+          <div class="message-success">
+            Tu mensaje ha ido enviado, Gracias!<br />
+          </div>
+        </div>
+        <!-- end contact-primary -->
 
-            <div class="contact-secondary">
-                <div class="contact-info">
+        <div class="contact-secondary">
+          <div class="contact-info">
+            <h3 class="h6 hide-on-fullwidth">Información de Contacto.</h3>
 
-                    <h3 class="h6 hide-on-fullwidth">Información de Contacto.</h3>
+            <div class="cinfo">
+              <h5>Dirección</h5>
+              <p>
+                Av. Universidad #1001,<br />
+                La Estación Rincón, El Potrero,<br />
+                20400 Rincón de Romos, Ags.
+              </p>
+            </div>
 
-                    <div class="cinfo">
-                        <h5>Dirección</h5>
-                        <p>
-                            Av. Universidad #1001,<br>
-                            La Estación Rincón, El Potrero,<br>
-                            20400 Rincón de Romos, Ags.
-                        </p>
-                    </div>
+            <div class="cinfo">
+              <h5>Email.</h5>
+              <p>
+                utna@utna.edu.mx<br />
+                tecnogenesis@gmail.com
+              </p>
+            </div>
 
-                    <div class="cinfo">
-                        <h5>Email.</h5>
-                        <p>
-                            utna@utna.edu.mx<br>
-                            tecnogenesis@gmail.com
-                        </p>
-                    </div>
+            <div class="cinfo">
+              <h5>Otros:</h5>
+              <p>
+                Tel. (465) 965 00 30<br />
+                WhatsApp: 4651546294<br />
+              </p>
+            </div>
+            <!-- end contact-social -->
+          </div>
+          <!-- end contact-info -->
+        </div>
+        <!-- end contact-secondary -->
+      </div>
+      <!-- end contact-content -->
+    </section>
+    <!-- end s-contact -->
 
-                    <div class="cinfo">
-                        <h5>Otros:</h5>
-                        <p>
-                            Tel. (465) 965 00 30<br>
-                            WhatsApp: 4651546294<br>
-                        </p>
-                    </div>
+    <section id="map">
 
-                    <ul class="contact-social">
-                        <li>
-                            <a href="https://www.facebook.com/utnaoficial"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCF7Xb1DxdXgBbuDlIY6oRwg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/utna_edu/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-
-                    </ul> <!-- end contact-social -->
-
-                </div> <!-- end contact-info -->
-            </div> <!-- end contact-secondary -->
-
-        </div> <!-- end contact-content -->
-
-    </section> <!-- end s-contact -->
-
+    </section>
 
     <!-- footer
     ================================================== -->
-    <footer>
+    <section class="footer1" data-aos="fade-up">
+      <div class="container-footer-all">
+        <div class="container-body">
+          <div class="colum1">
+            <img src="img/Footer/TecnoGenesis.png" alt="" />
+            <h1>Más información de la compañía</h1>
 
-        <div class="row footer-main text-dark">
+            <p>
+              “Transformar el entorno a través de una educación superior
+              integral de excelencia en beneficio de la sociedad".
+            </p>
+          </div>
 
-            <div class="col-six tab-full left footer-desc">
-                <img src="img/footer/TecnoGenesis.png" alt="" width="280px" height="250px">
+          <div class="colum2">
+            <h1>Redes Sociales</h1>
+            <div class="row1">
+              <img src="img/icon/facebook.png" />
+              <label>Siguenos en Facebook</label>
+            </div>
+            <div class="row1">
+              <img src="img/icon/twitter.png" />
+              <label>Siguenos en Twitter</label>
+            </div>
+            <div class="row1">
+              <img src="img/icon/instagram.png" />
+              <label>Siguenos en Instagram</label>
+            </div>
+            <div class="row1">
+              <img src="img/icon/google-plus.png" />
+              <label>Siguenos en Google Plus</label>
+            </div>
+            <div class="row1">
+              <img src="img/icon/pinterest.png" />
+              <label>Siguenos en Pinteres</label>
+            </div>
+          </div>
+
+          <div class="colum3">
+            <h1>Asociados</h1>
+            <div class="row2">
+              <a href="https://www.utna.edu.mx/wp/" target="_blank"
+                ><img src="img/Footer/utna.png"
+              /></a>
             </div>
 
-            <div class="col-six tab-full right footer-subscribe text-dark">
-
-                <a href="nosotros.html"><h2 class="text-dark">Tecno Genesis.</h2></a> 
-                <h4 class="text-dark md-1-1">Misión.</h4>
-                <p class="mt-1">“Transformar el entorno a través de una educación superior integral de 
-                    excelencia en beneficio de la sociedad".</p>
-
-                <img src="img/footer/utna.png" alt="" width="160px" height="200px">
-                <img src="img/footer/ipn.png" alt="" width="170px" height="240px">
+            <div class="row2">
+              <a href="https://www.ciidirdurango.ipn.mx/" target="_blank"
+                ><img src="img/Footer/ciidir.png"
+              /></a>
             </div>
-        </div> <!-- end footer-main -->
-        <div class="row footer-bottom text-dark bg-light">
+          </div>
+        </div>
+      </div>
 
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright TecnoGenesis 2022.</span>
-                    <span>Site Template by TecnoGenesis.</span>
-                </div>
+      <div class="container-footer">
+        <div class="footer">
+          <div class="copyright">
+            © 2022 Todos los Derechos Reservados | <a href="">TecnoGenesis</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"
-                            aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
-
+    <!-- BOTON IR ARRIBA -->
+    <div class="go-top">
+      <a class="smoothscroll" title="Back to Top" href="#top"
+        ><i class="icon-arrow-up" aria-hidden="true"></i
+      ></a>
+    </div>
 
     <!-- Java Script
     ================================================== -->
@@ -297,7 +386,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -311,20 +400,22 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/main2.js"></script>
     <script>
-        $(document).ready(function () {
-            //funcion de cuando haga clik en cada una de las categorias de la pagina me desplase a esa parte pero de una manera lenta
-            //y con suabidad
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
-                    window.location.hash = hash;
-                });
-            });
-        })
+      $(document).ready(function () {
+        //funcion de cuando haga clik en cada una de las categorias de la pagina me desplase a esa parte pero de una manera lenta
+        //y con suabidad
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          var hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            900,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

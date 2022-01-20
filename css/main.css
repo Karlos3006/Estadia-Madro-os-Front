@@ -875,6 +875,7 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
+  
   background: #39b54a;
   border-color: #39b54a;
   color: #ffffff;
@@ -963,9 +964,9 @@ input[type="button"].btn2--prrimary {
 
 .btn.full-width,
 button.full-width {
-  font-size:10px;
+  font-size:16px;
   text-align: center ;
-  height: 35px;
+  height: 50px;
   margin-right: 0;
 }
 .bttn.fulll-width,
@@ -1502,12 +1503,11 @@ input::-moz-focus-inner {
 .section-header {
   text-align: center;
   position: relative;
-  margin-bottom: 3.6rem;
   max-width: 960px;
 }
 
 .section-header.has-bottom-sep {
-  padding-bottom: 2.1rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
@@ -3301,7 +3301,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content {
   max-width: 1000px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.4);
   padding-top: 6rem;
   padding-bottom: 6rem;
