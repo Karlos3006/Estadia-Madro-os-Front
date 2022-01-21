@@ -163,6 +163,7 @@
   .conte {
     max-width: 50%;
     max-height: 50%;
+    margin-top: 1em;
     padding: 0 0.5em;
   }
   .section {
@@ -174,6 +175,7 @@
   .conte {
     max-width: 90%;
     max-height: 50%;
+    margin-top: 1em;
   }
   .section {
     height: 100%;
@@ -257,6 +259,7 @@
 .colum3 {
   max-width: 400px;
   width: 250px;
+  margin-left: 30px;
 }
 
 .colum3 h1 {
@@ -333,7 +336,7 @@
 /* MAPA RESPONSIVO */
 .map-responsivo {
   overflow: hidden;
-  padding-bottom: 40%;
+  padding-bottom: 60%;
   position: relative;
   height: 0;
 }
