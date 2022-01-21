@@ -59,7 +59,7 @@
   width: 90%;
   height: 100vh;
   display: flex;
-  padding: 0 5em;
+  padding: 0 4em;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -180,7 +180,6 @@
   }
 }
 /* FIN CARDS NUEVAS */
-
 
 /* NUEVO FOOTER */
 
@@ -330,3 +329,19 @@
   }
 }
 /* FIN NUEVO FOOTER */
+
+/* MAPA RESPONSIVO */
+.map-responsivo {
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+}
+.map-responsivo iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* MAPA RESPONSIVO */
