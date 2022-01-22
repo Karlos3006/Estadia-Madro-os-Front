@@ -529,5 +529,16 @@ $(document).ready(function () {
 		$('#ver2').modal('show');
 	});
 
+	///CAMBIO DE COLOR CHECKBOXES
+
+	// $('input[type=checkbox]').on( 'click', function() {
+	// 	if( $(this).is(':checked') ){
+	// 		$('.service-box').addClass('activo');
+	// 		$('.sb-icon-box').addClass('activo');
+	// 		alert("entro")
+	// 	} else {
+	// 	}
+	// });
+
 });
 

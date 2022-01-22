@@ -14,6 +14,7 @@
 
 /* BOTON BUSCAR */
 #buscar {
+  position: relative;
   width: 15rem;
   color: white;
   background: rgb(252, 176, 69, 1);
@@ -91,7 +92,7 @@
   box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
 }
 .front,
-.back {
+.back,.back2 {
   height: 100%;
   width: 100%;
   border-radius: 20px;
@@ -131,13 +132,19 @@
   );
   transform: rotateX(180deg);
 }
+
+.back2{
+  overflow: hidden;
+  background: rgb(57,181,74);
+background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
+  transform: rotateX(180deg);
+}
+
 .conte:hover .cart {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
-.cart1,
-.cart2,
-.cart3 {
+.cart1,.cart2,.cart3,.cart4,.cart5,.cart6,.cart7,.cart8 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -150,6 +157,21 @@
 }
 .cart3 {
   background-image: url(../img/glosario2.png);
+}
+.cart4 {
+  background-image: url(../img/Nosotros/Karla.jpeg);
+}
+.cart5 {
+  background-image: url(../img/Nosotros/Alexander.jpeg);
+}
+.cart6 {
+  background-image: url(../img/Nosotros/Jose.jpeg);
+}
+.cart7 {
+  background-image: url(../img/Nosotros/Carlos.jpeg);
+}
+.cart8 {
+  background-image: url(../img/Nosotros/Aron.jpeg);
 }
 
 @media (min-width: 970px) {
@@ -169,6 +191,9 @@
   .section {
     height: 100%;
   }
+  #buscar{
+    margin-bottom: 3em;
+  }
 }
 
 @media (max-width: 609px) {
@@ -179,6 +204,9 @@
   }
   .section {
     height: 100%;
+  }
+  #buscar{
+    margin-bottom: 1em;
   }
 }
 /* FIN CARDS NUEVAS */
@@ -348,3 +376,10 @@
   position: absolute;
 }
 /* MAPA RESPONSIVO */
+
+/* inputs checks cambios */
+.service-thumbnail:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+/* inputs checks cambios */
