@@ -28,7 +28,7 @@ $(document).ready(function() {
 				cont=dato.nombre;
 				img=dato.imagenes.imagen1;
 				document.getElementById('divArbutus').innerHTML+=`
-				<div class="col-6" data-aos="fade-up">
+				<div data-aos="fade-up">
 					<div class="cont-comarosta">
 						<div class="comarosta-details">
 							<h1>${cont}</h1>
@@ -118,7 +118,7 @@ $(document).ready(function() {
 				cont=dato.nombre;
 				img=dato.imagenes.imagen1;
 				document.getElementById('divComarosta').innerHTML+=`
-				<div class="col-6" data-aos="fade-up">
+				<div data-aos="fade-up">
 					<div class="cont-comarosta">
 						<div class="comarosta-details">
 							<h1>${cont}</h1>

@@ -127,15 +127,33 @@
 }
 
 /*---Comarostaphylis y Arbutus--------*/
+#divArbutus,#divComarosta{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0em;
+  gap: 1em 1em;
+}
+.carousel-item img{
+  max-height: 28em;
+}
+
+@media screen and (max-width: 1100px) {
+  #divArbutus,#divComarosta{
+    grid-template-columns: 1fr;
+  }
+  .cont-comarosta {
+    height:10em;
+  }
+}
 .cont-comarosta {
   box-shadow: 0 15px 30px 1px gray;
   background: rgba(255, 255, 255, 0.9);
   text-align: center;
+  display: block;
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 10%;
-  height: 370px;
-  width: 560px;
+  height:24em;
+  width: 100%;
 }
 .comarosta-details {
   position: relative;
@@ -185,8 +203,7 @@
   overflow: hidden;
   height: 100%;
   float: right;
-  width: 45%;
-  display: inline-block;
+  width: 50%;
 }
 
 .cont-comarosta img {
