@@ -65,7 +65,8 @@ $(document).ready(function () {
 					});
 					document.getElementById("tarbutus").innerHTML = cont;
 				}).catch(function (error) {
-					alert('No hay especies que cumplan con la solicitud, modifica tu seleccion');
+					cont = '<tr class="text-danger"><td scope="col">Sin resultados</td></tr><tr class="text-danger"><td scope="col">Modifica tu seleccion</td></tr>';
+					document.getElementById("tarbutus").innerHTML = cont;
 					//console.log(error);
 				});
 		}
@@ -88,7 +89,8 @@ $(document).ready(function () {
 					});
 					document.getElementById("tcomaros").innerHTML = cont;
 				}).catch(function (error) {
-					alert('No hay especies que cumplan con la solicitud, modifica tu seleccion');
+					cont = '<tr class="text-danger"><td scope="col">Sin resultados</td></tr><tr class="text-danger"><td scope="col">Modifica tu seleccion</td></tr>';
+					document.getElementById("tcomaros").innerHTML = cont;
 					//console.log(error);
 				});
 		}
