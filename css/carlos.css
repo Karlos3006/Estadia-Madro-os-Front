@@ -402,3 +402,45 @@ background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
   transition: transform 0.2s;
 }
 /* inputs checks cambios */
+
+
+/* Seccion Buscador */
+
+.btn-group,#limpiarMapa{
+  display: block;
+}
+.contetabla{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30em;
+  position: relative;
+  }
+  .tabla tbody
+  {
+  position: absolute;
+  height: 25em;
+  overflow-y: auto;
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px #999;
+ -moz-box-shadow: 2px 2px 5px #999;
+  }
+  .tabla tbody tr td{
+    width: 10%;
+  }
+  .tabla thead{
+    width: 100%;
+  }
+  .tabla thead tr th{
+    width: 10%;
+  }
+  
+.contmapa{
+  width: 100% ;
+  height: 25em;
+  display: block;
+}
+#map{
+  width:100% ;
+  height: 100%;
+}
+/* Fin buscador */
