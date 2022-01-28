@@ -443,4 +443,26 @@ background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
   width:100% ;
   height: 100%;
 }
+.contenidos{
+  display: block;
+  padding: 20px 0px;
+}
+.contenidos h5
+{
+  line-height: 5px;
+  font-weight: bolder;
+  color: #2f771d;
+}
+.contenidos p{
+  margin: -7px 0px;
+  line-height: 19px;
+  text-align: justify;
+  color: #757474;
+}
+#nom,#nom2{
+  color: #2f771d;
+  margin: 0px;
+  font-size: 1.8em;
+}
+
 /* Fin buscador */
