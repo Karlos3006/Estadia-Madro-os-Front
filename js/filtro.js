@@ -167,6 +167,10 @@ $(document).ready(function () {
 		delete obj.peciolos;
 		delete obj.peciolos_ramillas;
 		delete obj.hojas;
+		$('.sb-icon-box').css('background-color','#ffa600');
+		$('.sb-caption').css('background-color','#ffa600');
+		document.getElementById("tarbutus").innerHTML = "";
+		document.getElementById("tcomaros").innerHTML = "";
 	}
 
 	//FUNCION CAMBIO DE COLOR BOTONES FILTRO
@@ -224,7 +228,7 @@ $(document).ready(function () {
 			$('#filtro').prop('hidden', true);
 			$('.tables').prop('hidden', true);
 		}
-		
+		$(location).attr('href','#filtro');
 
 	});
 
@@ -238,6 +242,7 @@ $(document).ready(function () {
 	//HABITO
 	$('.habito2').on('click', function () {
 		var habito = $(this).prop('name');
+		checkcolor(this,'habito');
 		$('.habito2').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('#btnhab', 0);
@@ -255,6 +260,7 @@ $(document).ready(function () {
 	//CORTEZA RAMAS
 	$('.corm').on('click', function () {
 		var corm = $(this).prop('name');
+		checkcolor(this,'cortrm');
 		$('.corm').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('#btncortrm', 0);
@@ -271,6 +277,7 @@ $(document).ready(function () {
 	//CORTEZA RAMILLAS
 	$('.corll').on('click', function () {
 		var corll = $(this).prop('name');
+		checkcolor(this,'cortrll');
 		$('.corll').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('#btncortrll', 0);
@@ -287,6 +294,8 @@ $(document).ready(function () {
 	//PECIOLOS Y PECIOLOS RAMILLAS
 	$('.peci').on('click', function () {
 		var peci = $(this).prop('name');
+		checkcolor(this,'peciolos');
+		checkcolor(this,'peciolosrll');
 		$('.peci').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('.btnpec', 0);
@@ -307,6 +316,7 @@ $(document).ready(function () {
 	//MARGEN
 	$('.marg').on('click', function () {
 		var marg = $(this).prop('name');
+		checkcolor(this,'margen');
 		$('.marg').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('#btnmarg', 0);
@@ -323,6 +333,7 @@ $(document).ready(function () {
 	//INFLORESCENCIA
 	$('.inflo').on('click', function () {
 		var inflo = $(this).prop('name');
+		checkcolor(this,'inflore');
 		$('.inflo').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('#btninflo', 0);
@@ -339,6 +350,7 @@ $(document).ready(function () {
 	//HOJAS
 	$('.hoja').on('click', function () {
 		var hoja = $(this).prop('name');
+		checkcolor(this,'hojasa');
 		$('.hoja').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('.btnhoj', 0);
@@ -356,6 +368,8 @@ $(document).ready(function () {
 	//HAZ
 	$('.has').on('click', function () {
 		var has = $(this).prop('name');
+		checkcolor(this,'haza');
+		checkcolor(this,'hazc');
 		$('.has').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('.btnhaz', 0);
@@ -372,6 +386,8 @@ $(document).ready(function () {
 	//ENVES
 	$('.env').on('click', function () {
 		var env = $(this).prop('name');
+		checkcolor(this,'envesa');
+		checkcolor(this,'envesc');
 		$('.env').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('.btnenv', 0);
@@ -482,6 +498,8 @@ $(document).ready(function () {
 	//FLORES
 	$('.flor').on('click', function () {
 		var flores = $(this).prop('name');
+		checkcolor(this,'floresa');
+		checkcolor(this,'floresc');
 		$('.flor').not(this).prop('checked', false);
 		if ($(this).prop('checked') == false) {
 			color('.btnflo', 0);
@@ -503,17 +521,17 @@ $(document).ready(function () {
 		$('.tables').prop('hidden', true);
 		$('#selecciones').html("");
 		//$('#habito').collapse('show');
+		color('.fu-width',0);
 		reset();
 	});
 
 	///BOTON REINICIAR
 	$('#reiniciar').on('click', function () {
 		$('.collapse :checkbox').prop('checked', false);
-		//$('.collapse').collapse('hide');
 		if ($('#Arbutus').prop('checked') == true) { fetch1() }
 		if ($('#Comarostaphylis').prop('checked') == true) { fetch2() }
 		$('#selecciones').html("");
-		color('.fulll-width',0);
+		color('.fu-width',0);
 		reset();
 	});
 	
@@ -531,16 +549,14 @@ $(document).ready(function () {
 		$('#ver2').modal('show');
 	});
 
-	///CAMBIO DE COLOR CHECKBOXES
+	///CAMBIO DE COLOR CHECKBOXES checked
+	function checkcolor(p,c) {
+		$('#'+c+' div.sb-icon-box').css('background-color','#ffa600');
+		$('#'+c+' div.sb-caption').css('background-color','#ffa600');
 
-	// $('input[type=checkbox]').on( 'click', function() {
-	// 	if( $(this).is(':checked') ){
-	// 		$('.service-box').addClass('activo');
-	// 		$('.sb-icon-box').addClass('activo');
-	// 		alert("entro")
-	// 	} else {
-	// 	}
-	// });
-
+		if($(p).is(':checked')) {
+			$(p).parent().parent().find('.sb-icon-box,.sb-caption').css('background-color','#38550f');
+		}
+	}		
 });
 

@@ -302,8 +302,8 @@ background: linear-gradient(32deg, rgba(57,181,74,1) 0%, rgba(227,164,2,1) 86%);
 
 .col img {
   border-radius: 10px;
-  width: 110px;
-  height: 80px;
+  width: 100px;
+  height: 70px;
   display: block;
 }
 

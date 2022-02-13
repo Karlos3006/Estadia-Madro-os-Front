@@ -4013,7 +4013,11 @@ footer .row {
   border-style: solid;
 }
 
-.service-box:hover .sb-icon-box {
+.service-box:hover .sb-icon-box{
+  background-color: #38550f;
+}
+
+.service-box:hover .sb-caption{
   background-color: #38550f;
 }
 
